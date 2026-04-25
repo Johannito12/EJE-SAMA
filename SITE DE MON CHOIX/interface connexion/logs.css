@@ -1,0 +1,122 @@
+/* style generale */
+body{
+    font-family:Arial, sans-serif ;
+    background:url(./background.jpg) no-repeat ;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+/* carte de connexion */
+.login{
+    background:transparent ;
+    padding:30px,40px ;
+    border-radius: 15px; ;
+    box-shadow:0 0 8px 8px white;
+    width: 322px;
+    text-align: center;
+}
+/* titre */
+.login h2{
+    margin-bottom:20px ;
+    font-size:50px ;
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* champ */
+.txt, .ps {
+    width:100% ;
+    padding:12px ;
+    margin:8px 0 ;
+    border:1px solid #ddd ;
+    border-radius:8px ;
+    font-size:14px ;
+    position: sticky;
+    z-index: 1;
+}
+/* option */
+.option{
+    display:flex ;
+    justify-content:space-between ;
+    align-items:center ;
+    font-size:14px ;
+    margin:10px 0 20px ;
+}
+.option a {
+    text-decoration: none;
+    color:#2563eb ;
+}
+.option a:hover {
+    text-decoration: underline;
+}
+/* button */
+.login button{
+    width:90% ;
+    padding:12px ;
+    background:whitesmoke;
+    color:red ;
+    border:none ;
+    border-radius:8px ;
+    font: size 16px; ;
+    cursor: pointer;
+}
+.login button:hover{
+    background:red;
+    color: whitesmoke;
+}
+/* texte inscription */
+.signup{
+    margin-top: 15px;
+    font-size:14px ;
+}
+.signup a{
+    color:#2563eb ;
+    text-decoration: none;
+}
+.signup a:hover{
+    text-decoration: underline;
+}
+/* espace de saisie Email et paasword */
+.txt, .ps {
+    border-radius: 15px;
+    justify-content: space-between;
+    margin: 10px;
+    height: 30px;
+    width: 250px;
+}
+/* logo */
+.logo {
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-self: center;
+    margin-top: -35px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+span{
+    color: whitesmoke;
+}
+
+.signup{
+    color: red;
+}
+
+.toggle-eye {
+    position: relative;
+    margin-left:-26px;
+    z-index: 2;
+    color: red;
+    cursor: pointer;
+}

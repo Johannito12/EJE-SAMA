@@ -1,0 +1,432 @@
+/* defilement fluide */
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+}
+/* design logo */
+nav .logo { 
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    margin-top: 2.5px;
+}
+
+nav .logo .logo-nav img{
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+nav .logo .eje {
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav .logo .sama {
+    color: #922B21;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* design of ul links */
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: x-large;
+}
+
+nav ul li {
+    margin-right: 2rem;
+    border-radius: 50px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul li a {
+    color:whitesmoke;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #922B21;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+/* design button connexion */
+nav button {
+    color: whitesmoke;
+    background-color: #922B21;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-right: 50px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* animation of button on navbar */
+nav button:hover {
+    background-color: whitesmoke;
+    box-shadow: 0 0 8px 8px #922B21;
+    color: #922B21;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #922B21;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 8px 8px #922B21;
+}
+
+nav .logo .eje:hover {
+    color: #922B21;
+    transition: 0.3s ease-in-out;
+}
+
+nav .logo .sama:hover {
+    color: whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+
+/* animation background */
+
+#slide-text {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: wheat;
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+    white-space: nowrap;
+    opacity: 0;
+    max-width: 90%;
+    white-space: normal;
+}
+
+    /* welcome */
+
+#welcome{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    min-width: 100vw;
+    background: url('./backgroundSection/gabimaru.jpg') center/cover no-repeat fixed;
+    transition: background 1.5s ease;
+    position: relative;
+}
+
+/* anime */
+#anime{
+    height: 1000px;
+    width: 95vw;
+    background-color: #922B21;
+    padding: 4rem 2rem;
+}
+
+/* header-anime */
+.search-anime {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    background-color: black;
+}
+.search-anime h2 {
+    color: #922B21;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.search-anime input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: medium;
+}
+/* container and card for anime and manga*/
+.content-anime-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 30px auto;
+    min-width: 100px;
+}
+.carte-anime{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 250px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4 ease;
+}
+.carte-anime img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: transform 0.9s ease;
+}
+
+/* button voir plus et titre*/
+.title-button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    transform: translateY(100%); /*pour cacher en bas*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.title-button h4{
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px black;
+    margin-right: 50px;
+}
+
+.title-button button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background 0.5s ease, color 0.3s ease;
+    margin-right: 50px;
+}
+
+.title-button button:hover{
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px white;
+}
+
+/* animation */
+/* carte se souleve */
+.carte-anime:hover{
+    transform: translateY(-10px) ;
+    box-shadow: 0 15px 35px  rgba(255, 255, 255, 0.2);
+}
+/* zoom image */
+.carte-anime:hover img {
+    transform: scale(1.1);
+}
+/* titre et bouton remonte */
+.carte-anime:hover .title-button {
+    transition: transform 0.5s ease;
+    transform: translateY(0);
+}
+
+/* manga */
+#manga{
+    height: 1000px;
+    width: 95vw;
+    background-color: #922B21;
+    padding: 4rem 2rem;;
+}
+/* header-manga */
+.search-manga {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    background-color: black;
+}
+.search-manga h2 {
+    color: #922B21;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+.search-manga input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: medium;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    width: 97.6vw;
+}
+
+/* responsive tablette */
+@media (max-width: 1024px) {
+    /*  NAVBAR */
+    nav ul li a {
+        margin-right: 20px;
+    }
+    nav button {
+        margin-right: 10px;
+    }
+    /* TEXTE DU DIAPORAMA  */
+    #slide-text {
+        font-size: 2.5rem;
+    }
+    /*  SECTIONS ANIME & MANGA  */
+    #anime,
+    #manga {
+        height: auto;
+        width: 100%;
+        padding: 3rem 1.5rem;
+        box-sizing: border-box;
+    }
+    /*  GRILLE DE CARTES */
+    .content-anime-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+
+/* responsive mobile */
+@media (max-width: 768px) {
+    /*section welcome*/
+    #welcome {
+        background-attachement: scroll;
+        background-position: center center;
+        background-size: cover;
+        min-width: 100%;
+        height: 100svh;
+    }
+    /*  NAVBAR */
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0.8rem;
+        background-color: rgba(0, 0, 0, 0.88);
+        gap: 0;
+    }
+    nav .logo {
+        font-size: medium;
+        flex-shrink: 0;
+    }
+    nav ul {
+        flex-direction: row;
+        gap: 0;
+        padding-left: 0;
+    }
+    nav ul li {
+        margin-right: 10px;
+        font-size: small;
+    }
+    nav ul li a {
+        display: inline-block;
+        margin-right: 0;
+        padding: 0.3rem 0.5rem;
+        font-size: small;
+    }
+    nav button {
+        width: auto;
+        margin-right: 0;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        padding: 0.3rem 0.7rem;
+        font-size: small;
+    }
+
+    nav .logo .logo-nav img{
+        display: none;
+    }
+    /*  TEXTE DU DIAPORAMA */
+    #slide-text {
+        font-size: 1.6rem;
+        bottom: 8%;
+        padding: 0 1rem;
+    }
+    /*  SECTIONS ANIME & MANGA  */
+    #anime,
+    #manga {
+        height: auto;
+        width: 100%;
+        padding: 6rem 1rem 2rem;
+        box-sizing: border-box;
+    }
+    /*  BARRE DE RECHERCHE  */
+    .search-anime,
+    .search-manga {
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 15px;
+        gap: 0.5rem;
+    }
+    .search-anime input,
+    .search-manga input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /*  GRILLE DE CARTES  */
+    .content-anime-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.6rem;
+    }
+    .carte-anime {
+        height: 190px;
+    }
+    .title-button h4 {
+        font-size: 1rem;
+        margin-right: 30px;
+    }
+    .title-button button {
+        margin-right: 0;
+        padding: 0.4rem 1rem;
+    }
+    /*  FOOTER  */
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+/* responsive tres petit mobile */
+@media (max-width: 480px) {
+    /*  TEXTE DU DIAPORAMA  */
+    #slide-text {
+        font-size: 1.2rem;
+    }
+    /* GRILLE DE CARTES  */
+    .content-anime-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .carte-anime {
+        height: 160px;
+    }
+    /*  BARRE DE RECHERCHE  */
+    .search-anime h2,
+    .search-manga h2 {
+        font-size: x-large;
+    }
+}
