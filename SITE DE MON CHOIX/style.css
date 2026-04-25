@@ -316,9 +316,8 @@ footer {
         background-attachment: scroll;
         background-position: center center;
         background-size: cover;
-        min-width: 50%;
+        width: 50%;
         height: 100svh;
-        object-fit: cover;
     }
     /*  NAVBAR */
     nav {
