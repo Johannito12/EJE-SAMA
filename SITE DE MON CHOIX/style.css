@@ -332,7 +332,7 @@ footer {
         flex-wrap: nowrap;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: nowrap;
-        background-color: rgba(0, 0, 0, 0.88);
+        background-color: transparent;
         gap: 0;
     }
     nav .logo {
