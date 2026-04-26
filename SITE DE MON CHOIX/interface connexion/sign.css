@@ -120,3 +120,10 @@ span{
     color: red;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    body{
+       background-position: center top;
+       background-size: cover; 
+    }
+}
