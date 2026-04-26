@@ -314,6 +314,9 @@ footer {
     /*section welcome*/
     #welcome {
        background-size: cover;
+       background-attachment: scroll;
+       background-position: center;
+       background-repeat: no-repeat;
     }
     /*  NAVBAR */
     nav {
