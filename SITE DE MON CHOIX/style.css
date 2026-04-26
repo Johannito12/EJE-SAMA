@@ -356,10 +356,10 @@ footer {
     }
     nav button {
         width: auto;
-        margin-right: 0;
+        margin-right: 5px;
         box-sizing: border-box;
         flex-shrink: 0;
-        padding: 0.3rem 0.7rem;
+        padding: 0.1rem 0.3rem;
         font-size: small;
     }
 
