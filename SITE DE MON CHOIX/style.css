@@ -11,7 +11,7 @@ nav {
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    margin-top: 0;
     background: transparent;
 }
 /* design logo */
