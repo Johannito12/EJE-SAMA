@@ -313,12 +313,11 @@ footer {
 @media (max-width: 768px) {
     /*section welcome*/
     #welcome {
-       width: 100%;
-       height: 100svh; 
+       min-width: 10%;
+       height: 10svh; 
        background-size: cover;
        background-attachment: scroll;
-       background-position: center;
-       background-repeat: no-repeat;
+       background-position: center center;
     }
     /*  NAVBAR */
     nav {
