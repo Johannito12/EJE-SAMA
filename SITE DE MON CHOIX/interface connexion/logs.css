@@ -116,7 +116,6 @@ span{
 @media (max-width: 768px) {
     body{
        background-position: center top;
-       background-size: cover;
-       min-width: 100vh; 
+       background-size: cover; 
     }
 }
