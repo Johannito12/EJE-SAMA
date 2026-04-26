@@ -314,7 +314,7 @@ footer {
     /*section welcome*/
     #welcome {
        min-width: 10%;
-       height: 10svh; 
+       height: 85svh; 
        background-size: cover;
        background-attachment: scroll;
        background-position: center center;
