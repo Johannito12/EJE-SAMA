@@ -313,7 +313,7 @@ footer {
 @media (max-width: 768px) {
     /*section welcome*/
     #welcome {
-        background-size: contain;          
+        background-size: 50% auto;          
         background-repeat: no-repeat;
         background-position: center top;
         width: 100%;
