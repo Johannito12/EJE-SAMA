@@ -313,7 +313,7 @@ footer {
 @media (max-width: 768px) {
     /*section welcome*/
     #welcome {
-        background: center 10%;
+        background-position: 50% 50%;
         width: 50%;
         height: 100vh;
     }
@@ -329,7 +329,7 @@ footer {
         -webkit-overflow-scrolling: touch;
         scrollbar-width: nowrap;
         background-color: rgba(0, 0, 0, 0.88);
-        gap: 0.8rem;
+        gap: 0;
     }
     nav .logo {
         font-size: medium;
