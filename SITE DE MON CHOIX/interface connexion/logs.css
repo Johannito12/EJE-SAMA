@@ -1,7 +1,7 @@
 /* style generale */
 body{
     font-family:Arial, sans-serif ;
-    background:url(./background.jpg) no-repeat ;
+    background:url(./background.jpg) center center / cover no-repeat ;
     background-size: cover;
     display:flex;
     justify-content: center;
@@ -113,10 +113,10 @@ span{
     color: red;
 }
 
-.toggle-eye {
-    position: relative;
-    margin-left:-26px;
-    z-index: 2;
-    color: red;
-    cursor: pointer;
+@media (max-width: 768px) {
+    body{
+       background-position: center top;
+       background-size: cover;
+       min-width: 100vh; 
+    }
 }
