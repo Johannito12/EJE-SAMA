@@ -321,10 +321,15 @@ footer {
     nav {
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding: 0.5rem 0.8rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: nowrap;
         background-color: rgba(0, 0, 0, 0.88);
-        gap: 0;
+        gap: 0.8rem;
     }
     nav .logo {
         font-size: medium;
