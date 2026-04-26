@@ -318,6 +318,7 @@ footer {
        background-size: cover;
        background-attachment: scroll;
        background-position: center center;
+       margin-top: 40px; 
     }
     /*  NAVBAR */
     nav {
