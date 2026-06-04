@@ -95,3 +95,8 @@ function filtre(inputId, sectionId) {
 
 filtre("search-animes", "anime");
 filtre("search-mangas", "manga");
+
+//installation
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+}
