@@ -98,5 +98,9 @@ filtre("search-mangas", "manga");
 
 //installation
 if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js");
+    navigator.serviceWorker.register("/sw.js").then(()=> {
+        console.log("Service Worker enregistré");
+    }).catch((error) => {
+        console.log(error);
+    });
 }
