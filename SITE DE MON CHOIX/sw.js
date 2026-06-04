@@ -9,8 +9,7 @@ self.addEventListener("install", (event) => {
                 "/index.html",
                 "/style.css",
                 "/index.js",
-                "/backgroundSection",
-                "/interface connexion"
+                "/manifest.json"
             ]);
         })
     );
