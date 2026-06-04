@@ -43,7 +43,9 @@ self.addEventListener("install", (event) => {
                 "/backgroundSection/Manga/naruto.jpg",
                 "/backgroundSection/Manga/onepiece.jpg",
                 "/backgroundSection/Manga/pokemon.jpg",
-                "/backgroundSection/Manga/slamdunk.jpg"
+                "/backgroundSection/Manga/slamdunk.jpg",
+                "/interface connexion/ChatGPT Image 28 août 2025, 01_47_53.png",
+                "/interface connexion/Logo.jpg"
             ]);
         })
     );
